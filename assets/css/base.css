@@ -109,7 +109,7 @@ html{
     cursor: pointer;
     color: var(--text-color);
     background: var(--white-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 1.6rem;
@@ -158,3 +158,58 @@ html{
   {
      color: var(--white-color);
  }
+
+
+ /* selection */
+ .select-input {
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+ }
+
+ .select-input__label {
+    font-size: 1.4rem;
+ }
+
+.select-input__icon {
+    font-size: 1.4rem;
+    color: #5f5e5e;
+    position: relative;
+    top: 1px;
+    outline: none;
+}
+
+.select-input:hover .select-input__list{
+    display: block; 
+}
+
+.select-input__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    padding: px 16px;
+    list-style: none;
+    display: none;
+}
+
+
+.select-input__link {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+}
